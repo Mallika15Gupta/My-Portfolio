@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#heading{
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 40px;
+		margin-top: 6%;
+	}
+	.main{
+		width: 45px;
+		height: 18px;
+		border-radius: 50px;
+		padding-right:4px ;
+		padding-bottom: 5px;
+		padding-left: -2px;
+		background-image: url(star.png);
+		background-size: cover;
+		background-position: 1.7px ;
+		box-shadow: 2px 1px 5px -1px #000;
+		box-shadow: inset 1px 0px 2px 0px #a3a2a2,
+						  2px 0px 2px -1px #a3a2a2;
+
+		background-color: pink;
+		border:3px inset #0a81f7;
+		position: absolute;
+		margin: 14% 42%;
+		cursor: pointer;
+		 top: -200px;
+  right: -630px;
+
+	}
+	#toggle{
+		transform: translateX(0px);
+		width: 21px;
+		height: 21px;
+		border-radius: 50%;
+	
+		margin: 1px 0px 1px 2px;
+		background-color: #0a81f7;
+		transition: 0.2s;
+		box-shadow: 1px 1px 4px 1px #a3a2a2,
+					2px 0px 4px 1px #a3a2a2;
+
+
+	}
+
+.hero
+{
+	height: 100vh;
+	width: 100%;
+	
+	font-family: sans-serif;
+	position: relative;
+}
+nav
+{
+	width: 25%;
+	margin: auto;
+	padding: 10px;
+	float: right;
+
+}
+.logo
+{
+	width: 180px;
+	cursor:pointer;
+}
+
+nav ul li  
+{
+	display: inline-block;
+	list-style: none;
+	margin: 5px 10px;
+
+}
+
+nav ul li a
+{
+	color:brown;
+}
+nav ul li a:hover
+{
+	color:#ff4321;
+}
+.info
+{
+	margin-left: 8%;
+	margin-right: 18%;
+}
+.info h1{
+	font-size: 60px;
+	margin-bottom:20px;
+	font-family: bradley hand, cursive;
+	
+}
+
+.info p{
+	
+	line-height: 15px;
+	font-family: Snell Roundhand, cursive;
+	color:red;
+}
+
+.info a{
+	padding: 6px 10px; 
+	color: #fff;
+	background-color: #4d0000;
+	display: inline-block;
+	border-radius: 5px;
+}
+.image-box 
+{
+	width: 40%;
+	height: 70%;
+	position:absolute;
+	bottom: 0;
+	right: 100px;
+
+}
+.image-box img{
+	height: 100%;
+	position: absolute;
+	left: 40%;
+	bottom: 0;
+	transform: translateX(-50%);
+	transition: bottom 1s left, 1s;
+}
+.image-box.main-img{
+border-radius: 10px;
+}
+
+.image-box:hover .back-img{
+bottom:40px;
+}
+.image-box:hover .main-img{
+left:50%;
+
+}
+.social-links
+{
+	margin-left: 8%;
+	margin-top: 100px;
+}
+.social-links a
+{
+	font-size: 30px;
+	color: var(--secondary-color);
+	margin-right: 50px;
+	text-align: center;
+	padding-top: 10px;
+}
+.social-links a:hover{
+	color: #ff4321;
+}

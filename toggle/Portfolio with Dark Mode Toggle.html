@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+   <title> My Portfolio </title>
+   <link rel="stylesheet" href="styletoggle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+
+<script type="text/javascript">
+
+	function togglefunc(){
+	  var toggle = document.getElementById("toggle").getAttribute("style");
+
+	if (toggle == "transform: translateX(0px);") 
+	{
+      document.getElementById("toggle").style.transform = "translateX(25px)";
+      document.getElementById("bodybg").style.backgroundColor ="#262833";
+      document.getElementById("mad").style.color ="#9852F9";
+      document.getElementById("zoo").style.color ="#9852F9";
+      document.getElementById("too").style.color ="#9852F9";
+      document.getElementById("loo").style.color ="#9852F9";
+  document.getElementById("nofun").style.color ="#6807F9"; 
+     document.getElementById("hard").style.color ="#8105D8"; 
+     document.getElementById("work").style.color ="#537EC5";
+	}
+
+	else {
+    
+     document.getElementById("toggle").style.transform = "translateX(0px)";
+     document.getElementById("bodybg").style.backgroundColor ="pink";
+     document.getElementById("mad").style.color ="brown";
+     document.getElementById("zoo").style.color ="brown";
+     document.getElementById("too").style.color ="brown";
+    document.getElementById("loo").style.color ="brown";  
+ document.getElementById("nofun").style.color ="#cc0000"; 
+   document.getElementById("hard").style.color ="darkred"; 
+    document.getElementById("work").style.color ="red";
+    
+	}
+	//#dbd7d7.... toggle==
+	// #36454f...else 
+	//#edf2fc...body style
+}
+
+</script>
+ <body style="background-color:pink"id="bodybg">
+<div class="hero">
+	
+<img src="logo.png" class="logo" width="130px" height="130px">
+
+<nav>
+		<ul>
+			<li > <a id="mad" href=#>Home </a></li>
+			<li > <a id="zoo" href=#>About me </a></li>
+			<li > <a id="too" href=contact.html>Contact </a></li>
+			<li > <a id="loo" href=#>Hire me </a></li>
+		</ul>	
+</nav>
+
+
+	<div class="main" onclick="togglefunc()">
+		<div id="toggle" align="right" width="20px" ></div>
+	</div>
+
+	<div class="info">
+		<h1 style="color: #cc0000" id="nofun"> Hello! I'm Mallika Gupta</h1>
+		
+		<h2 style="color:darkred" id="hard">Student, developer and creator</h2><br>
+<p id="work"> This is my website telling who I am and what I do. I am a third year under-grad, pursuing BTech <br>with Computer Science Engineering from SRMIST KTR Campus, Chennai. <br>I am a front-end developer and a content writer.</p><br>
+	
+	
+	</div>
+	<div class="image-box">
+		<img src="redpattern.png" class="back-img" width="70%" height="70vh">
+		<img src="photo.png" class="main-img">
+		</div>		
+</div>
+<center>
+<div class="social-links">
+	<a href="https://www.linkedin.com/in/mallika-gupta-210811183/"><i class="fab fa-linkedin-in"></i></a>
+	<a href="https://www.instagram.com/mylittlespace15/"><i class="fab fa-instagram"></i></a>
+	<a href="https://github.com/Mallika15Gupta"><i class="fab fa-github"></i></a>
+</div>
+</center>
+</body>
+</html>
